@@ -1,0 +1,38 @@
+main{
+    .portada{
+        h1{
+            font-size: 3.5rem;
+            color: purple;
+            text-align: center;
+            animation-duration: 2s;
+            animation-name: aparecer;
+            animation-iteration-count: infinite;
+        }
+        @keyframes aparecer{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    }
+    .h1Galeria{
+        h1{
+            font-size: 3.5rem;
+            color: lightcoral;
+            text-align: center;
+            animation-duration: 1.5s;
+            animation-name: aparecer;
+            animation-iteration-count: infinite;
+        }
+        @keyframes aparecer{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    }
+}

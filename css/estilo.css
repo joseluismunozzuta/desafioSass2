@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #c6f3e8; }
+
+header {
+  background-color: lightseagreen;
+  grid-area: header;
+  display: flex; }
+  header .headercss {
+    background-image: linear-gradient(to right, lightseagreen, #acecc9);
+    width: 100%; }
+    header .headercss .logo {
+      margin: 15px;
+      display: flex;
+      justify-content: center; }
+    header .headercss nav ul li a {
+      color: #09134d;
+      font-size: 20px;
+      font-weight: 400;
+      display: inline-block; }
+    header .headercss .header-btn {
+      margin: 15px;
+      display: flex;
+      justify-content: center; }
+      header .headercss .header-btn a {
+        font-weight: bold;
+        width: 80%; }
+
+main .portada h1 {
+  font-size: 3.5rem;
+  color: purple;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+main .h1Galeria h1 {
+  font-size: 3.5rem;
+  color: lightcoral;
+  text-align: center;
+  animation-duration: 1.5s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+footer {
+  display: flex;
+  font-size: 30px; }
