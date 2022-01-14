@@ -20,7 +20,7 @@ header {
     header .headercss nav ul li a {
       color: #09134d;
       font-size: 20px;
-      font-weight: 400;
+      font-weight: 600;
       display: inline-block; }
     header .headercss .header-btn {
       margin: 15px;
@@ -30,34 +30,42 @@ header {
         font-weight: bold;
         width: 80%; }
 
-main .portada h1 {
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+main .portada .h1top, main .portada .h1Galeria {
+  color: #079b7b;
   font-size: 3.5rem;
-  color: purple;
   text-align: center;
   animation-duration: 2s;
   animation-name: aparecer;
   animation-iteration-count: infinite; }
 
-@keyframes aparecer {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-main .h1Galeria h1 {
+main .portada .h1medium {
+  color: #0da6ac;
   font-size: 3.5rem;
-  color: lightcoral;
   text-align: center;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
   animation-name: aparecer;
   animation-iteration-count: infinite; }
 
-@keyframes aparecer {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+main .portada .h1bottom {
+  color: #057c76;
+  font-size: 3.5rem;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite; }
+
+main .h1Galeria {
+  font-weight: bold; }
 
 footer {
-  display: flex;
-  font-size: 30px; }
+  display: flex; }
+
+footer div a {
+  font-size: 40px;
+  font-weight: bold; }

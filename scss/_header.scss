@@ -1,3 +1,7 @@
+@mixin fontSizes($fsize, $fweight){
+    font-size: $fsize;
+    font-weight: $fweight;
+}
 header{
     background-color: lightseagreen;
     grid-area: header;
@@ -15,8 +19,7 @@ header{
                 li{
                     a{
                         color:#09134d;
-                        font-size: 20px;
-                        font-weight: 400;
+                        @include fontSizes(20px, 600);
                         display: inline-block;
                     }
                 }

@@ -1,4 +1,9 @@
 footer{
     display: flex;
-    font-size: 30px; 
+    div{
+        a{
+            @include fontSizes(40px, bold);
+        }
+    }
+    
 }

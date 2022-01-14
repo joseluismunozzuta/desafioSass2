@@ -1,38 +1,38 @@
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+$h1Posicion:(
+    top: #079b7b,
+    medium: #0da6ac,
+    bottom: #057c76
+);
+$styles:(
+    tamano: 3.5rem,
+    centro: center,
+    duracion: 2s,
+    nombreAnimacion: aparecer
+);
 main{
     .portada{
-        h1{
-            font-size: 3.5rem;
-            color: purple;
-            text-align: center;
-            animation-duration: 2s;
-            animation-name: aparecer;
-            animation-iteration-count: infinite;
-        }
-        @keyframes aparecer{
-            0%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 1;
+        @each $h1pos, $color in $h1Posicion{
+            .h1#{$h1pos}{
+                color: $color;
+                font-size: map-get($styles , tamano);
+                text-align: map-get($styles , centro);
+                animation-duration: map-get($styles , duracion);
+                animation-name: map-get($styles , nombreAnimacion);
+                animation-iteration-count: infinite;
             }
         }
+        
     }
     .h1Galeria{
-        h1{
-            font-size: 3.5rem;
-            color: lightcoral;
-            text-align: center;
-            animation-duration: 1.5s;
-            animation-name: aparecer;
-            animation-iteration-count: infinite;
-        }
-        @keyframes aparecer{
-            0%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 1;
-            }
-        }
+        @extend .h1top;
+        font-weight: bold;
     }
 }
